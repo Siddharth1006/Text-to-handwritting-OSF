@@ -26,6 +26,15 @@ def merged(alpha1,alpha2):
     new_image.paste(img1 ,(0,0))
     new_image.paste(img2,(img1_size[0],0))
     new_image.save("images/save/newww.jpg","JPEG")
+    path = os.chdir(#Path to the "save" folder
+        )
+
+    i = 1
+    for file in os.listdir(path):
+        new_file_name = "pic{}.jpg".format(i)
+        os.rename(file , new_file_name)
+
+	       i += 1
     new_image.show()
 
 
